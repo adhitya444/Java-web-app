@@ -1,0 +1,14 @@
+# Use the official Tomcat 10 image as the base
+FROM tomcat:10-jdk17-openjdk-slim
+
+# Remove the default web apps to keep it clean
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+# Copy your WAR file from the Jenkins build into the container
+COPY target/Java-web-app.war /usr/local/tomcat/webapps/ROOT.war
+
+# Expose port 8080
+EXPOSE 8080
+
+# Start Tomcat
+CMD ["catalina.sh", "run"]

@@ -152,3 +152,25 @@ git push -u origin main
 git pull origin main --rebase
 ls -l
 git push -u origin main
+git add pom.xml
+nano pom.xml
+git add pom.xml
+git commit -m "Added standard POM for web app"
+git push origin main
+git init
+git add.
+git add .
+git commit -m "Initial Maven Project Structure"
+git remote add origin https://github.com/adhitya444/Java-web-app.git
+git push -u origin main
+Quick Check before you Build:
+Before hitting "Build Now," make sure you ran the permission command I mentioned earlier so Jenkins can copy the file:
+sudo chown -R jenkins:jenkins /var/lib/tomcat9/webapps/
+ps -ef | grep tomcat
+sudo chown -R jenkins:jenkins /var/lib/tomcat10/webapps/
+sudo visudo
+sudo chown -R jenkins:jenkins /var/lib/tomcat10/webapps/
+mkdir demoapp
+cd demoapp
+vi dockerfile.txt
+exit
